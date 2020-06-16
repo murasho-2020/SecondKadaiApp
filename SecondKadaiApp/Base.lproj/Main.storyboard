@@ -15,33 +15,36 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQv-C1-7PS">
-                                <rect key="frame" x="184" y="359" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQv-C1-7PS">
+                                <rect key="frame" x="112" y="360" width="191" height="30"/>
                                 <state key="normal" title="Button"/>
                                 <connections>
                                     <segue destination="SLf-tc-rBc" kind="show" id="IgR-su-6GG"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxv-O0-soH">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="名前を入力してください" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cxv-O0-soH">
                                 <rect key="frame" x="111.5" y="162" width="191" height="20.5"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5g-8e-qia">
-                                <rect key="frame" x="130" y="243" width="155" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="O5g-8e-qia">
+                                <rect key="frame" x="112" y="241" width="191" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Cxv-O0-soH" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="AcL-ft-V0f"/>
+                            <constraint firstItem="YQv-C1-7PS" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="reV-vH-8un"/>
+                            <constraint firstItem="O5g-8e-qia" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="uR0-v9-cvn"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
                         <outlet property="label" destination="Cxv-O0-soH" id="xhq-Vu-57W"/>
+                        <outlet property="textField" destination="O5g-8e-qia" id="fmg-ho-AeZ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -56,13 +59,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="こんにちは、さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejq-LI-mYY">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="こんにちは、さん" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ejq-LI-mYY">
                                 <rect key="frame" x="137.5" y="207" width="139" height="20.5"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRe-td-9l2">
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tRe-td-9l2">
                                 <rect key="frame" x="191.5" y="393" width="31" height="30"/>
                                 <state key="normal" title="戻る"/>
                                 <connections>
@@ -72,14 +75,15 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="Ejq-LI-mYY" firstAttribute="centerX" secondItem="XTv-Ts-Zk1" secondAttribute="centerX" id="2Wa-eb-kJz"/>
-                            <constraint firstItem="tRe-td-9l2" firstAttribute="centerX" secondItem="XTv-Ts-Zk1" secondAttribute="centerX" id="Fk2-Yy-kmt"/>
-                            <constraint firstItem="tRe-td-9l2" firstAttribute="top" secondItem="Ejq-LI-mYY" secondAttribute="bottom" constant="165.5" id="W9L-9f-eLT"/>
-                            <constraint firstItem="Ejq-LI-mYY" firstAttribute="top" secondItem="SII-cN-PMI" secondAttribute="top" constant="207" id="wlp-nq-jMF"/>
+                            <constraint firstItem="Ejq-LI-mYY" firstAttribute="centerX" secondItem="SII-cN-PMI" secondAttribute="centerX" id="6Tl-UN-9tK"/>
+                            <constraint firstItem="tRe-td-9l2" firstAttribute="centerX" secondItem="SII-cN-PMI" secondAttribute="centerX" id="wcD-l7-32x"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SII-cN-PMI"/>
                     </view>
                     <navigationItem key="navigationItem" id="UJB-hF-aue"/>
+                    <connections>
+                        <outlet property="label" destination="Ejq-LI-mYY" id="vp9-4D-U3v"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QBj-xA-Pe3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <exit id="hbu-6o-CdW" userLabel="Exit" sceneMemberID="exit"/>
